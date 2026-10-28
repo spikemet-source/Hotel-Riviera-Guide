@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <rect width="1600" height="1000" fill="#dce7e8"/>
+  <circle cx="1250" cy="220" r="110" fill="#f3d99b"/>
+  <path d="M0 720 L500 430 L850 650 L1120 470 L1600 760 L1600 1000 L0 1000Z" fill="#9db9b5"/>
+  <rect x="130" y="540" width="480" height="310" rx="18" fill="#ffffff" opacity=".92"/>
+  <text x="800" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="#17324d">COLAZIONE</text>
+  <text x="800" y="590" text-anchor="middle" font-family="Arial, sans-serif" font-size="32" fill="#17324d">Sostituire con una vostra fotografia</text>
+</svg>

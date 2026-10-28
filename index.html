@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hotel Riviera Fiumicino - Guest Information Guide">
+  <title>Hotel Riviera Fiumicino | Guest Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <div class="brand">
+        <img src="assets/images/logo.png" alt="Hotel Riviera Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+        <span>HOTEL RIVIERA <span>FIUMICINO</span></span>
+      </div>
+      <div class="lang-switcher" aria-label="Language selector">
+        <button class="lang active" data-lang="it" onclick="changeLanguage('it')">🇮🇹 IT</button>
+        <button class="lang" data-lang="en" onclick="changeLanguage('en')">🇬🇧 EN</button>
+        <button class="lang" data-lang="fr" onclick="changeLanguage('fr')">🇫🇷 FR</button>
+        <button class="lang" data-lang="es" onclick="changeLanguage('es')">🇪🇸 ES</button>
+        <button class="lang" data-lang="de" onclick="changeLanguage('de')">🇩🇪 DE</button>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow" data-i18n="eyebrow">GUEST GUIDE</p>
+      <h1 data-i18n="heroTitle">Benvenuti all'Hotel Riviera</h1>
+      <p class="hero-subtitle" data-i18n="heroSubtitle">Via Licio Visintini 30 - 00054 (RM) Fiumicino · 100m dal Mare</p>
+      <a class="primary-btn" href="#services" data-i18n="discover">Scopri i servizi</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro section">
+      <div>
+        <p class="eyebrow" data-i18n="welcomeEyebrow">IL VOSTRO SOGGIORNO</p>
+        <h2 data-i18n="welcomeTitle">Tutto quello che vi serve, in un unico posto.</h2>
+      </div>
+      <p data-i18n="welcomeText">Consultate gli orari, i servizi dell'hotel, le informazioni per l'aeroporto e le risposte alle domande più frequenti.</p>
+    </section>
+
+    <section id="services" class="section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="servicesEyebrow">SERVIZI</p>
+        <h2 data-i18n="servicesTitle">Informazioni essenziali</h2>
+      </div>
+
+      <div class="cards">
+        <article class="info-card featured">
+          <div class="icon">🚐</div>
+          <h3 data-i18n="shuttleTitle">Navetta aeroporto</h3>
+          <p data-i18n="shuttleText">Orari, punto d'incontro, prenotazione e tariffe.</p>
+          <a href="#shuttle" data-i18n="moreInfo">Maggiori informazioni →</a>
+        </article>
+        <article class="info-card">
+          <div class="icon">🍳</div>
+          <h3 data-i18n="breakfastTitle">Colazione</h3>
+          <p data-i18n="breakfastText">Servita dalle 07:00 alle 09:00 (€6,00 a persona se non inclusa).</p>
+        </article>
+        <article class="info-card">
+          <div class="icon">🕐</div>
+          <h3 data-i18n="stayTitle">Check-in & check-out</h3>
+          <p data-i18n="stayText">Check-in dalle 13:00, Check-out entro le 11:00. Early check-in €30.</p>
+        </article>
+        <article class="info-card">
+          <div class="icon">📶</div>
+          <h3 data-i18n="wifiTitle">Wi-Fi</h3>
+          <p data-i18n="wifiText">Rete: Hotel Riviera | Password: riviera97</p>
+        </article>
+        <article class="info-card">
+          <div class="icon">🅿️</div>
+          <h3 data-i18n="parkingTitle">Parcheggio</h3>
+          <p data-i18n="parkingText">Parcheggio interno incluso. Lunga sosta a €7 al giorno.</p>
+        </article>
+        <article class="info-card">
+          <div class="icon">🧳</div>
+          <h3 data-i18n="luggageTitle">Deposito bagagli</h3>
+          <p data-i18n="luggageText">Gratuito per poche ore, da 1 giorno in poi a pagamento.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="photo-break">
+      <img src="assets/images/hotel-exterior.jpeg" alt="Hotel Riviera Fiumicino">
+      <div class="photo-overlay">
+        <p class="eyebrow" data-i18n="locationEyebrow">FIUMICINO</p>
+        <h2 data-i18n="locationTitle">Vicino al mare e all'aeroporto</h2>
+        <p data-i18n="locationText">A soli 100m dal mare. Ristoranti a piedi, Supermercato Todis (Via Formoso) e Farmacia Terlizzi (Via Giorgio Giorgis).</p>
+      </div>
+    </section>
+
+    <section id="shuttle" class="section two-column">
+      <div>
+        <p class="eyebrow" data-i18n="shuttleEyebrow">SHUTTLE</p>
+        <h2 data-i18n="shuttleHeading">Servizio navetta</h2>
+        <p data-i18n="shuttleDescription">
+          Da Aeroporto ad Hotel: non serve prenotazione, basta raggiungere la fermata (T3 Arrivi Porta 4, Parcheggio navette n.3). Da Hotel ad Aeroporto: si prenota al check-in.
+        </p>
+        <div class="notice">
+          <strong data-i18n="important">Importante</strong>
+          <p data-i18n="shuttleNotice">Gli orari in rosso indicano corse con tariffa notturna. Il servizio notturno da FCO (23:00 - 00:00) è disponibile da Maggio a Ottobre.</p>
+        </div>
+        <div style="margin-top: 15px;">
+          <a class="primary-btn" href="https://www.youtube.com/watch?v=BxgIPRpyGNw" target="_blank" data-i18n="ytLink">Guarda il video per la fermata 🎥</a>
+        </div>
+      </div>
+
+      <div class="schedule-box">
+        <h3 data-i18n="scheduleTitle">Orari e Tariffe Navetta</h3>
+        
+        <p><strong data-i18n="hotelToAirportRoute">Hotel → Aeroporto (FCO)</strong></p>
+        <div class="schedule-row">
+          <span data-i18n="timesLabel">Orari:</span>
+          <strong>
+            <span style="color:red;">03:55 · 04:30 · 05:05 · 05:50</span> · 
+            06:40 · 07:40 · 08:50 · 09:50 · 10:40 · 11:35 · 12:35
+          </strong>
+        </div>
+        <div class="price">
+          <span data-i18n="dayLabel">Diurno: €8 / pers.</span> | 
+          <span style="color:red;" data-i18n="nightLabelHotel">Notturno: 1/2 Pax €26 - 3 Pax €36 - 4/5 Pax €52</span>
+        </div>
+
+        <hr style="margin: 15px 0; border: 0; border-top: 1px solid #eee;">
+
+        <p><strong data-i18n="airportToHotelRoute">Aeroporto (FCO) → Hotel</strong></p>
+        <div class="schedule-row">
+          <span data-i18n="timesLabel">Orari:</span>
+          <strong>
+            10:15 · 11:15 · 12:15 · 14:00 · 15:00 · 16:00 · 16:45 · 17:30 · 18:15 · 19:00 · 19:45 · 20:30 · 21:15 · 22:00 · 22:30 · 
+            <span style="color:red;">23:00 · 23:30 · 00:00</span>
+          </strong>
+        </div>
+        <div class="price">
+          <span data-i18n="dayLabel">Diurno: €8 / pers.</span> | 
+          <span style="color:red;" data-i18n="nightLabelFco">Notturno: €13 / pers.</span>
+        </div>
+
+        <p class="small" data-i18n="kidsFree">I bambini sotto i 3 anni viaggiano gratis. Pagamento diretto in hotel.</p>
+      </div>
+    </section>
+
+    <!-- Percorso fotografico per raggiungere la fermata della navetta -->
+    <section id="shuttle-directions" class="section shuttle-directions">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="shuttleEyebrow">SHUTTLE</p>
+        <h2 data-i18n="shuttleStepsTitle">Come raggiungere la fermata (Percorso fotografico)</h2>
+        <p data-i18n="shuttleStepsSubtitle">Segui le immagini per trovare facilmente la navetta al Terminal 3 Arrivi</p>
+      </div>
+
+      <div class="shuttle-steps">
+        <article class="shuttle-step">
+          <span class="step-number">1</span>
+          <div class="step-photo">
+            <img src="assets/images/step-1.png" alt="Passaggio 1" loading="lazy">
+          </div>
+          <div class="step-copy">
+            <h3 data-i18n="step1Title">Passaggio 1</h3>
+            <p data-i18n="step1Desc">Esci dal Terminal 3 Arrivi e dirigiti verso la Porta 4.</p>
+          </div>
+        </article>
+
+        <article class="shuttle-step">
+          <span class="step-number">2</span>
+          <div class="step-photo">
+            <img src="assets/images/step-2.png" alt="Passaggio 2" loading="lazy">
+          </div>
+          <div class="step-copy">
+            <h3 data-i18n="step2Title">Passaggio 2</h3>
+            <p data-i18n="step2Desc">Attraversa la prima corsia pedonale all'esterno della struttura.</p>
+          </div>
+        </article>
+
+        <article class="shuttle-step">
+          <span class="step-number">3</span>
+          <div class="step-photo">
+            <img src="assets/images/step-3.png" alt="Passaggio 3" loading="lazy">
+          </div>
+          <div class="step-copy">
+            <h3 data-i18n="step3Title">Passaggio 3</h3>
+            <p data-i18n="step3Desc">Prosegui dritto seguendo le indicazioni per il parcheggio bus e navette.</p>
+          </div>
+        </article>
+
+        <article class="shuttle-step">
+          <span class="step-number">4</span>
+          <div class="step-photo">
+            <img src="assets/images/step-4.png" alt="Passaggio 4" loading="lazy">
+          </div>
+          <div class="step-copy">
+            <h3 data-i18n="step4Title">Passaggio 4</h3>
+            <p data-i18n="step4Desc">Raggiungi la zona degli stalli riservati ai servizi di navetta.</p>
+          </div>
+        </article>
+
+        <article class="shuttle-step">
+          <span class="step-number">5</span>
+          <div class="step-photo">
+            <img src="assets/images/step-5.png" alt="Passaggio 5" loading="lazy">
+          </div>
+          <div class="step-copy">
+            <h3 data-i18n="step5Title">Passaggio 5</h3>
+            <p data-i18n="step5Desc">Attendi al punto di fermata n. 3 contrassegnato dal cartello.</p>
+          </div>
+        </article>
+      </div>
+      <p class="shuttle-steps-note" data-i18n="shuttleMeetingNote">Punto d'incontro: Terminal 3, Arrivi, Porta 4 — Parcheggio navette n. 3.</p>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="galleryEyebrow">L'HOTEL</p>
+        <h2 data-i18n="galleryTitle">Scoprite i nostri spazi</h2>
+      </div>
+      <div class="gallery">
+        <img src="assets/images/room.jpg" alt="Camera dell'hotel">
+        <img src="assets/images/breakfast.jpg" alt="Colazione">
+        <img src="assets/images/beach.jpg" alt="Fiumicino e il mare">
+      </div>
+    </section>
+
+    <section class="section details-grid">
+      <article>
+        <span class="detail-icon">🕐</span>
+        <h3 data-i18n="checkTitle">Check-in / Check-out</h3>
+        <p><strong data-i18n="checkinLabel">Check-in:</strong> <span data-i18n="checkinVal">dalle 13:00</span></p>
+        <p><strong data-i18n="checkoutLabel">Check-out:</strong> <span data-i18n="checkoutVal">entro le 11:00</span></p>
+        <p class="small" data-i18n="checkText">Early check-in €30 (in base alla disponibilità).</p>
+      </article>
+      <article>
+        <span class="detail-icon">🍳</span>
+        <h3 data-i18n="breakfastHeading">Colazione & Tassa</h3>
+        <p><strong data-i18n="hoursLabel">Colazione:</strong> <span data-i18n="hoursVal">07:00 – 09:00 (€6,00/pers.)</span></p>
+        <p><strong data-i18n="taxLabel">Tassa soggiorno:</strong> <span data-i18n="taxVal">€4.90 al giorno (dai 10 ai 69 anni)</span></p>
+      </article>
+      <article>
+        <span class="detail-icon">📶</span>
+        <h3 data-i18n="wifiHeading">Wi-Fi</h3>
+        <p><strong data-i18n="networkLabel">Rete:</strong> <span>Hotel Riviera</span></p>
+        <p><strong data-i18n="passwordLabel">Password:</strong> <span>riviera97</span></p>
+      </article>
+      <article>
+        <span class="detail-icon">🅿️</span>
+        <h3 data-i18n="parkingHeading">Parcheggio & Bagagli</h3>
+        <p data-i18n="parkingDetails">Parcheggio interno gratuito per ospiti. Lunga sosta €7/giorno. Deposito bagagli gratuito per poche ore, oltre a pagamento.</p>
+      </article>
+    </section>
+
+    <section class="cta">
+      <div>
+        <p class="eyebrow" data-i18n="helpEyebrow">AVETE BISOGNO DI AIUTO?</p>
+        <h2 data-i18n="helpTitle">La reception è a vostra disposizione.</h2>
+        <p data-i18n="helpText">Via Licio Visintini 30, Fiumicino (RM)</p>
+      </div>
+      <div class="cta-buttons" style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <a class="primary-btn light" href="tel:+39066580302" data-i18n="call">Chiama l'hotel</a>
+        <a class="primary-btn light whatsapp-btn" href="https://wa.me/393807646068" target="_blank" data-i18n="whatsapp">WhatsApp 💬</a>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="faqEyebrow">FAQ</p>
+        <h2 data-i18n="faqTitle">Domande frequenti</h2>
+      </div>
+      <details>
+        <summary data-i18n="faq1q">Come posso prenotare la navetta?</summary>
+        <p data-i18n="faq1a">Per arrivare da FCO basta andare alla fermata (Porta 4, T3 Arrivi). Per la partenza dall'hotel si prenota al check-in.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq2q">Dove si trova l'hotel?</summary>
+        <p data-i18n="faq2a">Via Licio Visintini 30 - 00054 Fiumicino (RM), a 100 metri dal mare.</p>
+      </details>
+      <details>
+        <summary data-i18n="faq3q">Qual è la tassa di soggiorno?</summary>
+        <p data-i18n="faq3a">La tassa di soggiorno è di €4,90 al giorno per persona (applicabile dai 10 ai 69 anni).</p>
+      </details>
+      <details>
+        <summary data-i18n="faq4q">Posso lasciare i bagagli?</summary>
+        <p data-i18n="faq4a">Sì, il deposito bagagli è gratuito per poche ore, mentre per 1 o più giorni è a pagamento.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="brand">HOTEL RIVIERA <span>FIUMICINO</span></div>
+        <p data-i18n="footerText">Via Licio Visintini 30 - 00054 Fiumicino (RM)</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services" data-i18n="footerServices">Servizi</a>
+        <a href="#shuttle" data-i18n="footerShuttle">Navetta</a>
+        <a href="#faq" data-i18n="footerFaq">FAQ</a>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Hotel Riviera Fiumicino</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
